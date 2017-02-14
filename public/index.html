@@ -5,5 +5,18 @@
 <body>
   Hello World
   <div id="app"></div>
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDKOGdpsqFeyPMlhrA4vErzc4NP3Oq5jOM",
+      authDomain: "iron-platter.firebaseapp.com",
+      databaseURL: "https://iron-platter.firebaseio.com",
+      storageBucket: "iron-platter.appspot.com",
+      messagingSenderId: "1097441208816"
+    };
+    
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>
