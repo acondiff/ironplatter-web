@@ -1,6 +1,6 @@
 const webpack = require('webpack'),
       path = require('path'),
-      distDir = path.resolve(__dirname, 'dist'),
+      publicDir = path.resolve(__dirname, 'public'),
       srcDir = path.resolve(__dirname, 'src'),
       prod = process.argv.indexOf('-p') !== -1;
 
@@ -8,7 +8,7 @@ const config = {
   entry: srcDir + '/index.js',
   context: path.join(__dirname),
   output: {
-    path: distDir,
+    path: publicDir,
     filename: 'iron-platter.min.js',
     library: ['IRON_PLATTER']
   },
