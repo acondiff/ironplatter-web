@@ -4,6 +4,6 @@ node_js:
 script:
   - echo "Deploying!"
 install:
-  - npm install -g firebase-tools webpack
+  - npm install -g firebase-tools webpack; npm install; npm run build;
 after_success:
-  - npm run build; firebase deploy --token $FIREBASE_TOKEN --project iron-platter
+  - firebase deploy --token $FIREBASE_TOKEN --project iron-platter
